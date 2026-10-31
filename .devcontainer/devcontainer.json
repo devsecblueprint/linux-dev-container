@@ -1,0 +1,20 @@
+{
+  "name": "Linux Development Container",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "containerUser": "root",
+  "remoteUser": "root",
+  "updateRemoteUserUID": false,
+  "overrideCommand": false,
+  "shutdownAction": "stopContainer",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
